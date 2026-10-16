@@ -1,3 +1,5 @@
+<img src="custom_components/source_query/brand/icon.png" alt="Source Server Query icon" width="96" align="right">
+
 # Source Server Query
 
 > [!NOTE]
