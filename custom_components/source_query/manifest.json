@@ -1,0 +1,13 @@
+{
+  "domain": "source_query",
+  "name": "Source Server Query",
+  "codeowners": ["@bl8demast3r"],
+  "config_flow": true,
+  "documentation": "https://github.com/bl8demast3r/ha-source-query",
+  "integration_type": "service",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/bl8demast3r/ha-source-query/issues",
+  "loggers": ["a2s"],
+  "requirements": ["python-a2s==1.4.2"],
+  "version": "0.1.0"
+}

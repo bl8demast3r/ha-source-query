@@ -1,0 +1,86 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add a game server",
+        "description": "Any server that answers Valve's A2S query protocol: Source and GoldSrc games, plus many others such as Rust, ARK and Valheim.",
+        "data": {
+          "host": "Host",
+          "port": "Query port"
+        },
+        "data_description": {
+          "host": "Hostname or IP address of the server.",
+          "port": "Usually the game port (27015 by default). Some games, such as Rust, answer queries on a separate port."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "The server didn't answer. Check the host and query port, and that UDP traffic can reach it from Home Assistant.",
+      "unknown": "Unexpected error. Check the Home Assistant log."
+    },
+    "abort": {
+      "already_configured": "This server is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "scan_interval": "Polling interval",
+          "player_list": "Fetch player list"
+        },
+        "data_description": {
+          "scan_interval": "Seconds between queries. Each poll is a few small UDP packets.",
+          "player_list": "Sends an extra A2S_PLAYER query each poll and shows connected player names on the Players sensor. The list is never stored in history."
+        }
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "online": {
+        "name": "Online"
+      },
+      "password_protected": {
+        "name": "Password protected"
+      },
+      "vac": {
+        "name": "VAC secured"
+      }
+    },
+    "sensor": {
+      "players": {
+        "name": "Players",
+        "state_attributes": {
+          "player_list": {
+            "name": "Player list"
+          }
+        }
+      },
+      "max_players": {
+        "name": "Max players"
+      },
+      "bots": {
+        "name": "Bots"
+      },
+      "server_name": {
+        "name": "Server name"
+      },
+      "map": {
+        "name": "Map"
+      },
+      "game": {
+        "name": "Game"
+      },
+      "latency": {
+        "name": "Latency"
+      },
+      "version": {
+        "name": "Version"
+      },
+      "tags": {
+        "name": "Tags"
+      }
+    }
+  }
+}

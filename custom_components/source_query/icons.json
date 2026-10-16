@@ -1,0 +1,44 @@
+{
+  "entity": {
+    "binary_sensor": {
+      "password_protected": {
+        "default": "mdi:lock-open-variant",
+        "state": {
+          "on": "mdi:lock"
+        }
+      },
+      "vac": {
+        "default": "mdi:shield-off-outline",
+        "state": {
+          "on": "mdi:shield-check"
+        }
+      }
+    },
+    "sensor": {
+      "players": {
+        "default": "mdi:account-multiple"
+      },
+      "max_players": {
+        "default": "mdi:account-group"
+      },
+      "bots": {
+        "default": "mdi:robot"
+      },
+      "server_name": {
+        "default": "mdi:server"
+      },
+      "map": {
+        "default": "mdi:map"
+      },
+      "game": {
+        "default": "mdi:controller"
+      },
+      "version": {
+        "default": "mdi:tag"
+      },
+      "tags": {
+        "default": "mdi:tag-multiple"
+      }
+    }
+  }
+}
