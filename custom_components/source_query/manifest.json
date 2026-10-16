@@ -9,5 +9,5 @@
   "issue_tracker": "https://github.com/bl8demast3r/ha-source-query/issues",
   "loggers": ["a2s"],
   "requirements": ["python-a2s==1.4.2"],
-  "version": "0.1.0"
+  "version": "0.1.1"
 }
