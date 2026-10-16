@@ -1,6 +1,8 @@
-<img src="custom_components/source_query/brand/icon.png" alt="Source Server Query icon" width="96" align="right">
+<p align="center">
+  <img src="custom_components/source_query/brand/icon.png" alt="Source Server Query icon" width="128">
+</p>
 
-# Source Server Query
+<h1 align="center">Source Server Query</h1>
 
 > [!NOTE]
 > **AI-generated code.** This integration was written largely by [Claude](https://www.anthropic.com/claude), an AI model by Anthropic, working with the maintainer through Claude Code. It has automated tests and was tested against a live TF2 server, but it has not had an independent human code review. Read the code before you rely on it, and report problems in the [issue tracker](https://github.com/bl8demast3r/ha-source-query/issues).
